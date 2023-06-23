@@ -1,0 +1,21 @@
+{
+  "name": "errorparser",
+  "version": "1.0.0",
+  "description": "parse Error",
+  "main": "dist/main.js",
+  "devDependencies": {
+    "terser-webpack-plugin": "^5.3.9",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "repository": {
+    "url": "https://github.com/leopord-lau/errorParser.git",
+    "type": "git"
+  },
+  "keywords": [
+    "error",
+    "parse"
+  ],
+  "author": "leo",
+  "license": "MIT"
+}
