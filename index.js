@@ -108,6 +108,4 @@ function createStackParser(parsers) {
 
 const errorParser = createStackParser([chromeParser, geckoParser]);
 
-export default {
-  errorParser,
-};
+export { errorParser };
