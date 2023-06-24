@@ -29,7 +29,6 @@ const chromeParser = (line) => {
 
     if (isEval) {
       const subMatch = chromeEvalRegex.exec(parts[2]);
-      console.log(subMatch);
       if (subMatch) {
         parts[2] = subMatch[1]; // url
         parts[3] = subMatch[2]; // line
@@ -58,7 +57,6 @@ const geckoParser = (line) => {
       const subMatch = geckoEvalRegex.exec(parts[3]);
 
       if (subMatch) {
-        // throw out eval line/column and use top-most line number
         parts[1] = parts[1] || "eval";
         parts[3] = subMatch[1];
         parts[4] = subMatch[2];
